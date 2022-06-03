@@ -76,44 +76,9 @@ public class UsoCoche {
 					z=1;
 					break;
 			}
-			
 		}while(z==1);
 		
-		//Datos del coche
-		/*
-		coche renault = new coche();
-		
-		System.out.println("Desea cambiar los datos de algun vehiculo?");
-		System.out.println(renault.diruedas());
-		
-	//	System.out.println(renault.dilargo());
-		
-		System.out.println("Que color tiene el coche?");
-		renault.configuracolor(JOptionPane.showInputDialog("Diga el color del coche"));
-		
-		System.out.println(renault.dicolor());
-		
-		renault.configuracionasientos(JOptionPane.showInputDialog("El coche tiene asientos de cuero?"));
-		System.out.println(renault.diasiento());
-		
-		renault.configuracionclimatizador(JOptionPane.showInputDialog("El coche tiene climatizador?"));
-		System.out.println(renault.diclimatizador());
-		
-		System.out.println(renault.dipeso());
-		
-		System.out.println("El precio del coche es "+renault.preciocoche());
-		
-		System.out.println("Deseas ver los datos del coche?");
-		String a = JOptionPane.showInputDialog("Deseas ver los datos del coche?");
-		
-		if(a.equalsIgnoreCase("Si")) {
-			renault.ditodo();
-		}
-		*/
-		
-		//Cerrar entradas para evitar fugas de informacion
-		entrada.close();
+		entrada.close(); //cerrar entradas 
 		sc.close();
-	
 		}
 }
