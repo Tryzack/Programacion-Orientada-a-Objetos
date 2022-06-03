@@ -1,0 +1,32 @@
+Se debe crear una clase llamada “Camioneta”.
+Esta clase debe tener los atributos de clase propios de un vehículo de estas características
+(ancho, largo, peso, capacidad de carga, tipo de tracción automática o sincrónica,
+color y todo que usted crea necesario para definir estos objetos), así como también
+tributos que pueden variar según el modelo (asientos, climatizador, color, tracción
+en las 4 ruedas…etc). La clase debe contar con un método constructor para dar
+las características comunes mínimas a cada uno de los ejemplares de clase que usted
+pueda diseñar. Es también necesario confeccionar métodos setter y getters para
+establecer y recuperar las características modificables de los objetos, así mismo
+diseñar un método dameCaracterísticasGenerales() que me permita recuperar toda
+la información posible de los objetos instanciados.  Nota recordar el concepto de “Encapsulamiento”
+y la forma correcta de acceder a los atributos de una clase desde una clase
+diferente. Por último, pedir datos al usuario por consola o por ventana emergente
+(como usted lo prefiera) para que sea el usuario quien establezca las características
+de las camionetas y pueda luego ver su resultado por consola. Es bueno recordar
+que esta clase “Camioneta” debe ser llamada desde la clase “UsoCoche”.
+
+
+ 
+
+
+Subir el archivo del proyecto a gitHub
+en su repositorio público, adjuntar el link de dirección en esta tarea de
+classroom y subir fotografías del código a mano con su cedula de identidad laminada
+al lado de la hoja. Si se omite algunos de estos requisitos el proyecto no será
+evaluado.
+
+
+ 
+
+
+Éxitos.
