@@ -10,12 +10,12 @@ public class UsoCoche {
 		camioneta camioneta = new camioneta(); //Constructor
 		int z=1;
 		do {
-			System.out.println("Que deseas hacer? \n[1] - Solicitar datos de la camioneta\n[2] - Modificar datos de la camioneta\n[3] - Salir");
+			System.out.println("Que deseas hacer?\n[1] - Solicitar datos de la camioneta\n[2] - Modificar datos de la camioneta\n[3] - Salir");
 			int j = entrada.nextInt(), k;
 			switch(j) {
 				case 1: //Datos de la camioneta
 					
-					System.out.println("La camioneta tiene los siguientes datos actuales:\n");
+					System.out.println("La camioneta tiene los siguientes datos actuales");
 					camioneta.ditodo();
 					break;
 					
@@ -33,7 +33,7 @@ public class UsoCoche {
 								camioneta.configuracolor(color);
 								break;
 								
-							case 2: //Modificar asientos
+							case 2: //Modificar asientos.
 								
 								System.out.println("Los asientos son de cuero?\n[1] - SI          [2] - NO");
 								k = entrada.nextInt();
@@ -62,25 +62,58 @@ public class UsoCoche {
 								
 								System.out.println("Opcion incorrecta, intente de nuevo");
 						}
-						}while(m==1);
-						break;
+					}while(m==1);
+					break;
 						
-					case 3: //Terminar
+				case 3: //Terminar
 						
 					z=0;
 					break;
 					
-					default:
+				default:
 						
-						System.out.println("Opcion incorrecta, intente de nuevo");
-						z=1;
-						break;
+					System.out.println("Opcion incorrecta, intente de nuevo");
+					z=1;
+					break;
 			}
 			
 		}while(z==1);
+		
+		//Datos del coche
+		/*
+		coche renault = new coche();
+		
+		System.out.println("Desea cambiar los datos de algun vehiculo?");
+		System.out.println(renault.diruedas());
+		
+	//	System.out.println(renault.dilargo());
+		
+		System.out.println("Que color tiene el coche?");
+		renault.configuracolor(JOptionPane.showInputDialog("Diga el color del coche"));
+		
+		System.out.println(renault.dicolor());
+		
+		renault.configuracionasientos(JOptionPane.showInputDialog("El coche tiene asientos de cuero?"));
+		System.out.println(renault.diasiento());
+		
+		renault.configuracionclimatizador(JOptionPane.showInputDialog("El coche tiene climatizador?"));
+		System.out.println(renault.diclimatizador());
+		
+		System.out.println(renault.dipeso());
+		
+		System.out.println("El precio del coche es "+renault.preciocoche());
+		
+		System.out.println("Deseas ver los datos del coche?");
+		String a = JOptionPane.showInputDialog("Deseas ver los datos del coche?");
+		
+		if(a.equalsIgnoreCase("Si")) {
+			renault.ditodo();
+		}
+		*/
 		
 		//Cerrar entradas para evitar fugas de informacion
 		entrada.close();
 		sc.close();
 	
 		}
+}
