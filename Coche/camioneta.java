@@ -8,7 +8,7 @@ public class camioneta {
 	
 	//metodo constructor (asignar caracterisiticas iniciales)
 	
-	public camioneta() { //valores que no cambian
+	public camioneta() {
 		ruedas=4;
 		largo=5.525;
 		ancho=1.815;
@@ -145,6 +145,7 @@ public class camioneta {
 		System.out.println(diancho());
 		System.out.println(diserialmotor());
 		System.out.println(dipeso());
+		System.out.println(dicapacidad());
 		System.out.println(dicolor());
 		System.out.println(diasiento());
 		System.out.println(diclimatizador());
