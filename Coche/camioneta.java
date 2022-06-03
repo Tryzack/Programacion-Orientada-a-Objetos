@@ -10,8 +10,8 @@ public class camioneta {
 	
 	public camioneta() { //valores que no cambian
 		ruedas=4;
-		largo=5525;
-		ancho=1815;
+		largo=5.525;
+		ancho=1.815;
 		serialmotor="D22T";
 		pesomotor=1500;
 		capacidad=1250;	
@@ -34,11 +34,11 @@ public class camioneta {
 	}
 	
 	public String dilargo() { //getter
-		return "El largo de la camioneta es "+largo;
+		return "El largo de la camioneta es de "+largo+" metros";
 	}
 	
 	public String diancho() { //getter
-		return "El ancho de la camioneta es "+ancho;
+		return "El ancho de la camioneta es de "+ancho+" metros";
 	}
 	
 	public String dicapacidad() { //getter
