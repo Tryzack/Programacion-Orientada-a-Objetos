@@ -1,0 +1,25 @@
+	public static void main(String[]args) {
+		try {
+			
+			Connection miConexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/pruebas", "postgres", "joseandres10");
+			System.out.println("Conexion realizada");
+			
+			Statement miStatement = miConexion.createStatement();
+			System.out.println("Statement creado");
+			
+			ResultSet miResultset = miStatement.executeQuery("select *from empleado");
+			System.out.println("Consulta SQL Correcta");
+			
+			while(miResultset.next()) {
+				System.out.println("ID  : "+ miResultset.getInt("ID")+
+				           " |  Nombre  : "+ miResultset.getString("Nombre")+
+				           " |  Salario : "+ miResultset.getDouble("Salario")+
+				           " |  Sexo   : "+ miResultset.getString("Sexo")+
+				           " |  Posicion   : "+ miResultset.getString("Posicion"));
+			}
+			
+		}catch(Exception e) {
+			System.out.println("Fallo");
+		}
+	}
+}
