@@ -1,0 +1,20 @@
+-- Table: public.empleado
+
+-- DROP TABLE IF EXISTS public.empleado;
+
+CREATE TABLE IF NOT EXISTS public.empleado
+(
+    id integer NOT NULL DEFAULT nextval('"empleado_ID_seq"'::regclass),
+    nombre text COLLATE pg_catalog."default" NOT NULL,
+    salario double precision,
+    sexo text COLLATE pg_catalog."default" NOT NULL,
+    posicion text COLLATE pg_catalog."default",
+    CONSTRAINT empleado_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.empleado
+    OWNER to postgres;
+    
+    --NOTA: no recuerdo como se le llama a un archivo de esto asi que lo paso asi, viene de la base de datos "pruebas"
